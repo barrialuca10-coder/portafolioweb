@@ -213,35 +213,24 @@
 </section>
 
 <section id="contacto">
-    <h2>Contacto</h2>
-    <p class="contacto-subtitulo">¿Tenés alguna propuesta o consulta técnica? ¡Hablemos!</p>
+   <form id="contactForm" class="contact-form">
+  <div class="form-group">
+    <label for="nombre">Usuario / Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre o apodo" required>
+  </div>
 
-    <div class="contacto-cards">
-        
-        <!-- Tarjeta Interactiva de LinkedIn -->
-        <a href="https://www.linkedin.com/in/luca-joaquin-barr%C3%ADa-7242bb36a/" target="_blank" rel="noopener noreferrer" class="card-contacto linkedin-card">
-            <div class="card-icon">
-                <i class="bi bi-linkedin"></i>
-            </div>
-            <div class="card-content">
-                <span class="card-tag">Red Profesional</span>
-                <h3>Luca Joaquin Barría</h3>
-                <p>Conectemos en LinkedIn <i class="bi bi-arrow-up-right"></i></p>
-            </div>
-            <div class="glow-effect"></div>
-        </a>
+  <div class="form-group">
+    <label for="asunto">Asunto</label>
+    <input type="text" id="asunto" name="asunto" placeholder="Motivo de la consulta" required>
+  </div>
 
-        <!-- Tarjeta Directa de Email / Mensaje -->
-        <!-- Tarjeta Directa de Email -->
-<a href="mailto:barrialuca10@gmail.com?subject=Consulta%20desde%20el%20Portafolio" class="card-contacto email-card">
-    <div class="card-icon">
-        <i class="bi bi-envelope-at-fill"></i>
-    </div>
-    <div class="card-content">
-        <span class="card-tag">Correo Directo</span>
-        <h3>Enviar un Mensaje</h3>
-        <p>barrialuca10@gmail.com <i class="bi bi-arrow-up-right"></i></p>
-    </div>
+  <div class="form-group">
+    <label for="mensaje">Petición / Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí lo que quieras dejar asentado..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn-enviar">Guardar Mensaje</button>
+</form>
 </a>
         </a>
 
